@@ -42,9 +42,9 @@ public class ApktoolProperties {
     }
 
     private static void loadProps() {
-        InputStream in = ApktoolProperties.class.getResourceAsStream("/properties/apktool.properties");
         sProps = new Properties();
         try {
+            InputStream in = ApktoolProperties.class.getResourceAsStream("/properties/apktool.properties");
             sProps.load(in);
             in.close();
         } catch (NullPointerException | IOException ex) {
