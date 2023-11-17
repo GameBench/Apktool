@@ -376,7 +376,7 @@ public final class ResXmlPatcher {
             docFactory.setAttribute(ACCESS_EXTERNAL_DTD, " ");
             docFactory.setAttribute(ACCESS_EXTERNAL_SCHEMA, " ");
         } catch (IllegalArgumentException ex) {
-            LOGGER.warning("JAXP 1.5 Support is required to validate XML");
+            //LOGGER.warning("JAXP 1.5 Support is required to validate XML");
         }
 
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();

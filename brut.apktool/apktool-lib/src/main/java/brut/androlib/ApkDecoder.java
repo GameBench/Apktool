@@ -33,6 +33,7 @@ import org.apache.commons.io.FilenameUtils;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
@@ -71,6 +72,8 @@ public class ApkDecoder {
     }
 
     public ApkDecoder(Config config, ExtFile apkFile) {
+        Logger.getGlobal().setLevel(Level.WARNING);
+        LOGGER.setLevel(Level.WARNING);
         mConfig = config;
         mApkInfo = new ApkInfo(apkFile);
     }

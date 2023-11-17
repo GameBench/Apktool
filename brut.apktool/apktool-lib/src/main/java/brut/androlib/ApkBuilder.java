@@ -42,6 +42,7 @@ import javax.xml.transform.TransformerException;
 import java.io.*;
 import java.nio.file.Files;
 import java.util.*;
+import java.util.logging.Level;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Logger;
 import java.util.zip.CRC32;
@@ -74,6 +75,7 @@ public class ApkBuilder {
     }
 
     public ApkBuilder(Config config, ExtFile apkDir) {
+        LOGGER.setLevel(Level.WARNING);
         mConfig = config;
         mApkDir = apkDir;
     }

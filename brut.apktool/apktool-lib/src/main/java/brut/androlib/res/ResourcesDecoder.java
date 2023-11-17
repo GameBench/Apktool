@@ -32,6 +32,7 @@ import org.xmlpull.v1.XmlSerializer;
 
 import java.io.*;
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ResourcesDecoder {
@@ -47,6 +48,7 @@ public class ResourcesDecoder {
         "FFFFFFFFFFFFFFFFFFFFFF" };
 
     public ResourcesDecoder(Config config, ApkInfo apkInfo) {
+        LOGGER.setLevel(Level.WARNING);
         mConfig = config;
         mApkInfo = apkInfo;
         mResTable = new ResTable(mConfig, mApkInfo);
