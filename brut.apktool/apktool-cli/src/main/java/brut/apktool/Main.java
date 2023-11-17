@@ -48,7 +48,7 @@ public class Main {
         System.setProperty("jdk.util.zip.disableZip64ExtraFieldValidation", "true");
 
         // set verbosity default
-        Verbosity verbosity = Verbosity.NORMAL;
+        Verbosity verbosity = Verbosity.QUIET;
 
         // cli parser
         CommandLineParser parser = new DefaultParser();
