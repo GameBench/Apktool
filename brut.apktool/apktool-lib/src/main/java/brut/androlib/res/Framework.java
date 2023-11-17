@@ -256,6 +256,6 @@ public class Framework {
     }
 
     private InputStream getAndroidFrameworkResourcesAsStream() {
-        return Jar.class.getResourceAsStream("/brut/androlib/android-framework.jar");
+        return Jar.class.getResourceAsStream("/brut/androlib/android-framework.jarx");
     }
 }
